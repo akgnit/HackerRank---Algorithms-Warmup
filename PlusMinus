@@ -1,0 +1,34 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main(){
+    int i;
+    float n,count1=0,count2=0,count3=0;
+    cin >> n;
+    float arr[100];
+    for(i = 0;i < n;i++)
+    {
+       cin >> arr[i];
+       if(arr[i] > 0)  
+       { count1++;}
+       if(arr[i] < 0)  
+       {  count2++;}
+       if(arr[i] == 0)  
+       { count3++;}
+    }
+    double a,b,c;
+    cout.precision(3);
+    a=count1/n;
+    b=count2/n;
+    c=count3/n;
+    cout<<a<<"\n";
+    cout<<b<<"\n";
+    cout<<c<<"\n";
+    
+    return 0;
+}
